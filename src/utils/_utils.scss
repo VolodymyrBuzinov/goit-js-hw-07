@@ -1,0 +1,19 @@
+$main-color: #ffffff;
+$hover-color: #00ffff;
+$text-color: #e0ffff;
+%text-throw {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+%list-throw {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+%link-throw {
+  display: block;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
