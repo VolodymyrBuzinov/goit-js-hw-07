@@ -3,56 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
-    />
+    <title>Заголовок страницы</title>    
   </head>
   <body>
-    <include src="./partials/task1.html"></include>
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task2.html"></include>
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task3.html"></include>
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task4.html"></include>
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task5.html"></include>.
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task6.html"></include>
-    <br />
-    <br />
-    <br />
-    <include src="./partials/task7.html"></include>
-    <br />
-    <br />
-    <br />
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц.
-    <include src="./partials/example.html"></include>
-
-    Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <div class="toolbar">
+      <!-- Разметка переключателя темы -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use href="/images/sprite.svg#sun"></use>
+        </svg>
+    
+        <div class="theme-switch__control">
+          <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle"
+            aria-label="Переключить между тёмной и светлой темой" />
+          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+    
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="/images/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+    
+    <!-- В этот список рендери разметку меню -->
+    <ul class="menu js-menu"></ul>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script src="./js/script.js" type="module"></script>
-    <script src="./js/script2.js" type="module"></script>
-    <script src="./js/script3.js" type="module"></script>
-    <script src="./js/script4.js" type="module"></script>
-    <script src="./js/script5.js" type="module"></script>
-    <script src="./js/script6.js" type="module"></script>
-    <script src="./js/script7.js" type="module"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
